@@ -53,28 +53,10 @@
     border-radius: 10px;
     border: 1px solid;
     // padding: 0.8rem 4rem;
-    padding: clamp(0.8rem, 1%, 1rem );
+    padding: clamp(0.8rem, 1%, 1rem);
 
     &:hover {
       background-color: var(--orange-hover-color);
     }
-
-    
-
-    // @media screen and (max-width: 500px) {
-    //   font-weight: 800;
-    //   padding: 1rem 1rem;
-    // }
-
-    // @media screen and (max-width: 400px) {
-    //   font-weight: 800;
-    //   padding: 1rem 0.9rem;
-    // }
-
-    // @media screen and (max-width: 300px) {
-    //   font-size: 10px;
-    //   font-weight: 800;
-    //   padding: 0.7rem 0.7rem;
-    // }
   }
 }

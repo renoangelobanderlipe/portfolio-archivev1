@@ -1,28 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
-import { client } from "../../client";
-
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-
-  const [download, setDownload] = useState([]);
-
-  useEffect(() => {
-    const query = "*[_type == 'resume']";
-
-    client.fetch(query).then((data) => {
-      setDownload(data);
-    });
-  }, []);
 
   return (
     <nav className="app__navbar">
       {/* Logo */}
       <div className="app__navbar-logo">
-        <a href="#" rel="noreferrer noopener">
+        <a href="#home" rel="noreferrer noopener">
           PEANUT
         </a>
         {/* <img src={images.logo} alt="logo" /> */}
@@ -38,10 +26,9 @@ const Navbar = () => {
           </li>
         ))}
         <div className="app__navbar-resume">
-            <a href='/assets/Banderlipe_RenoAngelo.pdf' download>
-
-              Resume
-            </a>
+          <a href="/assets/Banderlipe_RenoAngelo.pdf" download>
+            Resume
+          </a>
         </div>
       </ul>
 
