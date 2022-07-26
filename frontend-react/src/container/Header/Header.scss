@@ -1,0 +1,60 @@
+.app__header {
+  h3 {
+    font-size: clamp(25px, 1vw, 50px);
+    font-weight: 600;
+    margin-top: 20px;
+    color: #0f172a;
+  }
+
+  p {
+    margin-top: 25px;
+    line-height: 1.3;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 100%;
+  }
+}
+.app__header-greetings {
+  font-weight: 500;
+  font-size: 20px;
+  color: #475569;
+  line-height: 3;
+
+  span {
+    color: var(--orange-primary-color);
+    font-weight: 800;
+  }
+}
+
+.app__header-profile {
+  div {
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 800;
+    line-height: 1;
+    color: var(--orange-primary-color);
+
+    span {
+      line-height: 1.1;
+      color: #0f172a;
+    }
+  }
+}
+
+.app__header-btn {
+  margin: 3rem 0;
+
+  a {
+    font-size: 16px;
+    color: var(--orange-primary-color);
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 0.8rem 4rem;
+
+    &:hover {
+      background-color: var(--orange-hover-color);
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.app__works {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__work-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 2rem 0 0.5rem;
+
+  .app__work-filter-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: var(--gray-color);
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+
+    &:hover {
+      background-color: var(--orange-hover-color);
+      color: #fff;
+    }
+
+    @media screen and (min-width: 2000px) {
+      padding: 1rem 2rem;
+      border-radius: 0.85rem;
+    }
+  }
+
+  .item-active {
+    background-color: var(--orange-primary-color);
+    color: #fff;
+  }
+}
+
+.app__work-portfolio {
+  display: flex;
+  align-self: center;
+
+  flex-wrap: wrap;
+  // justify-content: flex-end;
+  align-items: flex-start;
+
+  .app__work-item {
+    width: 270px;
+    flex-direction: column;
+
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--orange-hover-color);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 470px;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      width: 100%;
+      margin: 1rem;
+    }
+    
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+.app__work-content {
+  padding: 0.5rem;
+  width: 100%;
+  flex-direction: column;
+
+  h4 {
+    margin-top: 1rem;
+    line-height: 1.5;
+    font-weight: 800;
+    color: var(--gray-color);
+
+    @media screen and (min-width: 2000px) {
+      margin-top: 3rem;
+    }
+  }
+
+  .app__work-tag {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+    p {
+      color: var(--orange-primary-color);
+      font-weight: 800;
+    }
+  }
+
+  .app__work-icons {
+    display: flex;
+    justify-content: space-between;
+
+    .app__work-links {
+      padding: 0 1rem;
+    }
+  }
+}
+
+.app__work-technologies {
+  ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    gap: 1rem;
+
+    li {
+      padding: 0.3rem;
+      text-align: center;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--gray-color);
+    }
+  }
+}
